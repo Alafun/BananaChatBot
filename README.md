@@ -1,3 +1,7 @@
+---
+
+---
+
 # BananaChatBot
  Task for NLP class. 
 
@@ -7,11 +11,13 @@
 
 
 
-## MindMap
+## Slide MindMap
 
 ### Background
 
 Q&A robot
+
+<iframe src="//player.bilibili.com/player.html?aid=976216105&bvid=BV1L44y147zC&cid=426662719&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 ### DEMO
 
