@@ -14,7 +14,7 @@
 1. Q&A robot
 2. [CU GAME](https://www.bilibili.com/video/BV1L44y147zC)
 
-### DEMO
+### DEMO Code
 
 Telegram or Dingding Chat Bot
 
