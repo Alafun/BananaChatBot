@@ -1,7 +1,7 @@
 # BananaChatBot
  Task for NLP(Natural Language Process) class.  
 
-  Deployment: https://colab.research.google.com/drive/15xKwj3iOQkWaTKy6fUdbnA1w3qvlVX8t?usp=sharing
+  Deployment:  [ ![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg) ](https://colab.research.google.com/drive/15xKwj3iOQkWaTKy6fUdbnA1w3qvlVX8t?usp=sharing)
 
 
 
