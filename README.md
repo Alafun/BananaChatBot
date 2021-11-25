@@ -1,5 +1,6 @@
 # BananaChatBot
  Task for NLP(Natural Language Process) class.  
+ If you love the repo or the repo is helpful for you, the star ⭐ is welcomed 🤗.
 
   Deployment:  [ ![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg) ](https://colab.research.google.com/drive/15xKwj3iOQkWaTKy6fUdbnA1w3qvlVX8t?usp=sharing)
 
