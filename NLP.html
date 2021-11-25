@@ -1,0 +1,193 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>NLP - @演说.io</title>
+
+    <meta name="keywords" content="演说，yanshuo, yanshuo.io, 演说.io, 空中演说, 展示文稿, HTML 展示文稿, Web 展示文稿" />
+  	  <meta name="description" content="创作真正跨平台的 HTML5 展示文稿，让你的分享到达世界的任何一个角落" />
+
+  		<meta name="apple-mobile-web-app-capable" content="yes">
+  		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  		<!-- Reveal base style -->
+  		<link rel="stylesheet" href="https://yanshuo.io/assets/player/css/reveal.min.css">
+
+  		<!-- Yanshuo.io seed style -->
+  		<link rel="stylesheet" href="https://yanshuo.io/assets/player/atcss/at-block.min.css">
+  		<link rel="stylesheet" href="https://yanshuo.io/assets/player/atcss/at-hljs-theme-bundler.min.css">
+  		<link rel="stylesheet" href="https://yanshuo.io/assets/player/atcss/at-reveal-default-theme.min.css">
+
+  		<!-- Source Sans Web Fonts -->
+  		<link rel="stylesheet" href="https://yanshuo.io/assets/player/lib/font/source-sans-pro/source-sans-pro.css">
+
+      <!-- Printing and PDF exports -->
+      <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'https://yanshuo.io/assets/player//css/print/pdf.css' : '';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      </script>
+
+      <!--[if lt IE 9]>
+  		<script src="lib/js/html5shiv.js"></script>
+  		<![endif]-->
+
+  		<!-- style for "critical path" -->
+  		<style>
+  	  </style>
+  </head>
+  <body>
+    <!-- TODO: a lightweighted loading -->
+
+    <!-- main slides -->
+    <div id="YS" class="at-code-lh-12" style="width:100%;height:100%;" data-reveal-theme="qcon" data-highlight-theme="zenburn" data-ys-title="NLP" data-ys-user="ZhuFan" data-ys-transition="slide" data-ys-backgroundTransition="fade" data-ys-transitionSpeed="default" data-ys-fv="2"><style>
+
+  /*********************************************
+   * THEME: qcon
+   *********************************************/
+
+  /*********************************************
+   * Yanshuo Inject
+   *********************************************/
+
+   .hljs{
+     
+   }
+
+  /*********************************************
+   * GLOBAL STYLES
+   *********************************************/
+
+  body, .reveal, .reveal-preview {
+  	background-color: #fff;
+  }
+
+  .reveal, .reveal-preview  {
+    
+    color: #333;
+  }
+
+  ::selection {
+  	background: rgb(87, 167, 224);
+  }
+
+  /*********************************************
+   * HEADERS
+   *********************************************/
+
+  .reveal h1, .reveal-preview h1,
+  .reveal h2, .reveal-preview h2,
+  .reveal h3, .reveal-preview h3,
+  .reveal h4, .reveal-preview h4,
+  .reveal h5, .reveal-preview h5,
+  .reveal h6, .reveal-preview h6 {
+    
+  	color: #246baf;
+  }
+
+
+  /*********************************************
+   * LINKS
+   *********************************************/
+
+  .reveal a, .reveal-preview a {
+  	color: #246baf;
+    text-decoration: underline;
+  }
+  	.reveal a:hover, .reveal-preview a:hover {
+  		color: #1d8045;
+  	}
+
+
+  /*********************************************
+   * NAVIGATION CONTROLS
+   *********************************************/
+
+  .reveal .controls .navigate-left,
+  .reveal .controls .navigate-left.enabled {
+  	border-right-color: #246baf;
+  }
+
+  .reveal .controls .navigate-right,
+  .reveal .controls .navigate-right.enabled {
+  	border-left-color: #246baf;
+  }
+
+  .reveal .controls .navigate-up,
+  .reveal .controls .navigate-up.enabled {
+  	border-bottom-color: #246baf;
+  }
+
+  .reveal .controls .navigate-down,
+  .reveal .controls .navigate-down.enabled {
+  	border-top-color: #246baf;
+  }
+
+  .reveal .controls .navigate-left.enabled:hover {
+  	border-right-color: #1d8045;
+  }
+
+  .reveal .controls .navigate-right.enabled:hover {
+  	border-left-color: #1d8045;
+  }
+
+  .reveal .controls .navigate-up.enabled:hover {
+  	border-bottom-color: #1d8045;
+  }
+
+  .reveal .controls .navigate-down.enabled:hover {
+  	border-top-color: #1d8045;
+  }
+
+  /*********************************************
+   * PROGRESS BAR
+   *********************************************/
+
+  .reveal .progress span {
+  	background: #246baf;
+
+</style><div class="reveal"><div class="slides"><section data-notes="" data-background-image="https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122082454221-1439792788.png" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:179.8130081300813px;top:650.3523035230353px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637810748381" class="at-block-content"><blockquote><p><span style="color:#4D4D4D">你指尖跳跃的电光，是我此生不灭的信仰</span></p></blockquote></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:56.235772357723576px;top:144.11924119241192px;width:800px;" class="at-block at-block--pure"><article data-block-id="1636034307498" class="at-block-content"><h1><span style="font-size:72px">Seq2seq 的问答</span></h1><h1><span style="font-size:72px">机器人🤗</span><a href="https://github.com/Alafun/BananaChatBot"><span style="font-size:28px">[1]</span></a></h1></article></div><div style="left:-43.49322493224935px;top:419.6205962059621px;width:800px;" class="at-block at-block--pure"><article data-block-id="1636034307499" class="at-block-content"><h2><span style="font-size:36px"><a href="http://yanshuo.io">@</a><a href="https://github.com/Alafun">朱凡</a><span style="color:#cccccc">（alafun）</span></span></h2></article></div><div style="left:198.48509485094854px;top:483.8211382113821px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637250342679" class="at-block-content"><h2><span style="font-size:28px"><a href="http://yanshuo.io">@</a>卢源斌<span style="color:#cccccc">（moonlove）</span></span></h2></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:87.6720867208672px;top:130.35230352303523px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637539950953" class="at-block-content"><ul><li>遇到的问题</li><li>这是一个正经的汇报</li><li>感谢 <span style="color:#0062B1">@lpy </span>刘同学</li><li>&nbsp;</li></ul></article></div><div style="left:-297.1517615176151px;top:18.373983739837406px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637541027458" class="at-block-content"><p>写在前面：</p></article></div><div style="left:352.1707317073171px;top:1.598915989159849px;width:800px;height:500px;" class="at-block at-block--pure"><article data-block-id="1637544498340" class="at-block-content MarkdownBlock"><p><details></p>
+<summary>ceshi查看Seq2Seq模型</summary>
+
+<ul>
+<li>Seq2Seq模型</li>
+</ul>
+<p><a href="./pycorrector/seq2seq">seq2seq</a> 模型使用示例:</p>
+<h4 id="-">配置</h4>
+<p>通过修改<code>config.py</code>。</p>
+<h4 id="-">数据预处理</h4>
+</article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:79px;top:270px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637516903803" class="at-block-content"><h1>什么是 Seq2seq？</h1></article></div><div style="left:-313.4908569474045px;top:70.04341305548976px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637517445007" class="at-block-content"><p><strong><span style="color:#0062B1">引子</span></strong></p></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:79px;top:270px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637516903803" class="at-block-content"><h1>什么是 Chat Bot？</h1></article></div><div style="left:-308.07080274686246px;top:72.21143473570656px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637517445007" class="at-block-content"><p><strong><span style="color:#0062B1">引子</span></strong></p></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:-58.969321440787255px;top:30.29284079248558px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637517592865" class="at-block-content"><h2>一个好玩的小 demo</h2></article></div><div style="width:349.5438596491228px;height:525.3686324244346px;left:306.83982313507346px;top:136.40493767968752px;" class="at-block at-block--pure"><article data-block-id="1637518117324" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122020813527-152753195.jpg /></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="width:991.7046859788987px;height:522.5308549499206px;left:-8.1563922435341px;top:142.90200862813424px;" class="at-block at-block--pure"><article data-block-id="1637517656206" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122010607051-1188714279.gif /></article></div><div style="left:261.3085221143474px;top:653.6569579288026px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637517751485" class="at-block-content"><p><span style="font-size:14px">ref: https://github.com/eternnoir/pyTelegramBotAPI</span></p></article></div><div style="left:-355.7357065803668px;top:654.7357065803668px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637517814514" class="at-block-content"><p><span style="font-size:12px">telegram/replit</span></p></article></div><div style="left:-58.969321440787255px;top:30.29284079248558px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637578270892" class="at-block-content"><h2>一个好玩的小 demo</h2></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:79px;top:270px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637516903803" class="at-block-content"><h1>什么是 Chat Bot？</h1></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in fade-out"><div style="width:558.3063646170442px;height:519.6543855281719px;left:3.9751887810139976px;top:-1.0436893203883528px;" class="at-block at-block--pure"><article data-block-id="1637518309710" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122010349766-1069470470.jpg /></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="fade-in fade-out"><div style="width:453.6677454153182px;height:422.25997842502693px;left:3.9751887810139976px;top:-1.0436893203883528px;" class="at-block at-block--pure"><article data-block-id="1637518309710" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122010349766-1069470470.jpg /></article></div><div style="width:450.1402373247034px;height:595.7738435179897px;left:86.10571736785329px;top:90.3293356177422px;" class="at-block at-block--pure"><article data-block-id="1637518355127" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122010327213-722998165.jpg /></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="fade-in fade-out"><div style="width:453.6677454153182px;height:422.25997842502693px;left:3.9751887810139976px;top:-1.0436893203883528px;" class="at-block at-block--pure"><article data-block-id="1637518309710" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122010349766-1069470470.jpg /></article></div><div style="width:358.4466019417476px;height:474.41462021701886px;left:120.62567421790723px;top:73.60873151849731px;" class="at-block at-block--pure"><article data-block-id="1637518355127" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122010327213-722998165.jpg /></article></div><div style="width:593.0515294201854px;height:530.9782434554135px;left:201.5885826469731px;top:145.21053755861018px;" class="at-block at-block--pure"><article data-block-id="1637518387651" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122010322486-1183159398.jpg /></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="convex-in slide-out"><div style="width:713.6461704422869px;height:664.2398971039747px;left:3.9751887810139976px;top:-1.0436893203883528px;" class="at-block at-block--pure"><article data-block-id="1637518309710" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122010349766-1069470470.jpg /></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:79px;top:270px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637517507328" class="at-block-content"><h1>什么是Seq2seq？</h1></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:79px;top:270px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637516903803" class="at-block-content"><h1>什么是Seq2seq？</h1></article></div><div style="left:263.46601941747576px;top:433.5922330097087px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637517040812" class="at-block-content"><h2>seq：Sequence</h2></article></div><div style="left:261.30852211434734px;top:572.7508090614888px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637517082455" class="at-block-content"><p><span style="font-size:14px">ref:&nbsp;https://arxiv.org/pdf/1409.3215.pdf</span></p></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in fade-out"><div style="width:960px;height:288.90851735015775px;left:1.0840108401084012px;top:204.46173048481273px;" class="at-block at-block--pure"><article data-block-id="1637517208562" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122005654146-1503705805.png /></article></div><div style="left:-111.78590785907859px;top:-2.2222222222222356px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637541980288" class="at-block-content"><h2>encoder - decoder</h2></article></div><div style="left:184.1490514905149px;top:509.43089430894304px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637542430287" class="at-block-content"><p><span style="font-size:14px">ref: http://www.wildml.com/2016/04/deep-learning-for-chatbots-part-1-introduction/</span></p></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="fade-in slide-out"><div style="width:960px;height:288.90851735015775px;left:0;top:205.54574132492112px;" class="at-block at-block--pure"><article data-block-id="1637517208562" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122005654146-1503705805.png /></article></div><div style="left:72.4959349593496px;top:549.5392953929539px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637541283913" class="at-block-content"><h2>+ attention</h2></article></div><div style="left:-112.869918699187px;top:-2.2222222222222356px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637542018288" class="at-block-content"><h2>encoder - decoder</h2></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="width:629.9029126213592px;height:189.5669964166488px;left:-148.8673139158576px;top:4.995137123586495px;" class="at-block at-block--pure"><article data-block-id="1637517208562" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122005654146-1503705805.png /></article></div><div style="width:800px;height:407px;left:73.68500539374324px;top:190.72869471413162px;" class="at-block at-block--pure"><article data-block-id="1637517276625" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122010457376-1365578849.gif /></article></div><div style="left:182.5598705501618px;top:624.5307443365697px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637517367899" class="at-block-content"><p><span style="font-size:14px">ref: https://github.com/google/seq2seq</span></p></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="width:736.6937669376694px;height:387.446351500552px;left:-26.016260162601647px;top:7.9520224831877755px;" class="at-block at-block--pure"><article data-block-id="1637541894057" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122010428931-2052512903.png /></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="width:736.6937669376694px;height:387.446351500552px;left:-26.016260162601647px;top:7.9520224831877755px;" class="at-block at-block--pure"><article data-block-id="1637541894057" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122010428931-2052512903.png /></article></div><div style="width:851.5989159891599px;height:447.8779484091137px;left:10.84010840108401px;top:88.44183478871827px;" class="at-block at-block--pure"><article data-block-id="1637541917664" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122010426547-1502479928.png /></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="width:736.6937669376694px;height:387.446351500552px;left:-26.016260162601647px;top:7.9520224831877755px;" class="at-block at-block--pure"><article data-block-id="1637541894057" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122010428931-2052512903.png /></article></div><div style="width:851.5989159891599px;height:447.8779484091137px;left:10.84010840108401px;top:88.44183478871827px;" class="at-block at-block--pure"><article data-block-id="1637541917664" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122010426547-1502479928.png /></article></div><div style="width:960px;height:504.88888888888886px;left:57.452574525745256px;top:142px;" class="at-block at-block--pure"><article data-block-id="1637541942404" class="at-block-content"><img src=https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122010435029-1692171336.png /></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:79px;top:60px;width:800px;height:600px;" class="at-block at-block--pure"><article data-block-id="1637249584538" class="at-block-content"><iframe src='https://zh.wikipedia.org/wiki/Seq2seq' data-prevent-swipe allowfullscreen></iframe></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:74.6639566395664px;top:93.4959349593496px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637665037505" class="at-block-content"><h2>应用场景</h2></article></div><div style="left:79px;top:340px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637665037506" class="at-block-content"><p style="text-align: left;">链接</p><ol><li style="text-align: left;">&nbsp;基于&nbsp;<a href="https://ai.binwang.me/couplet/">https://ai.binwang.me/couplet/</a></li></ol></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:74.6639566395664px;top:93.4959349593496px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637665037505" class="at-block-content"><h2>应用场景</h2></article></div><div style="left:79px;top:340px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637665037506" class="at-block-content"><p style="text-align: left;">链接</p><ol><li style="text-align: left;">&nbsp;基于&nbsp;<a href="https://ai.binwang.me/couplet/">https://ai.binwang.me/couplet/</a></li></ol></article></div><div style="left:79px;top:-14.796747967479675px;width:800px;height:731.1653116531165px;" class="at-block at-block--pure"><article data-block-id="1637669994474" class="at-block-content"><iframe src='https://ai.binwang.me/couplet/' data-prevent-swipe allowfullscreen></iframe></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in convex-out"><div style="left:83.33604336043359px;top:-12.73712737127373px;width:871.5447154471544px;height:auto;" class="at-block at-block--pure"><article data-block-id="1637249131762" class="at-block-content"><ul><li><span style="font-size:18px"><a href="https://zh.wikipedia.org/wiki/Seq2seq">https://zh.wikipedia.org/wiki/Seq2seq</a></span></li><li><span style="font-size:18px"><a href="https://github.com/nlpinaction/learning-nlp/tree/master/chapter-10/seq2seq">https://github.com/nlpinaction/learning-nlp/tree/master/chapter-10/seq2seq</a></span></li><li><span style="font-size:18px"><a href="https://blog.csdn.net/daniellibin/article/details/103290169">https://blog.csdn.net/daniellibin/article/details/103290169</a></span></li><li><span style="font-size:18px"><a href="https://github.com/nndl/nndl.github.io/blob/master/md/DeepGuide.md">https://github.com/nndl/nndl.github.io/blob/master/md/DeepGuide.md</a></span></li><li><span style="font-size:18px"><a href="https://nndl.github.io/">https://nndl.github.io/</a></span></li><li><span style="font-size:18px"><a href="https://study.163.com/course/courseLearn.htm?courseId=1006498029#/learn/video?lessonId=1064411353&amp;courseId=1006498029">https://study.163.com/course/courseLearn.htm?courseId=1006498029#/learn/video?lessonId=1064411353&amp;courseId=1006498029</a></span></li><li><span style="font-size:18px"><a href="https://github.com/Alafun/BananaChatBot/blob/main/support%20resource/%E5%AE%9E%E6%88%98%EF%BC%9ASeq2Seq%E7%9A%84%E9%97%AE%E7%AD%94%E6%9C%BA%E5%99%A8%E4%BA%BA.pdf">https://github.com/Alafun/BananaChatBot.pdf</a></span></li><li>&nbsp;</li><li><span style="font-size:18px"><a href="https://towardsdatascience.com/generative-chatbots-using-the-seq2seq-model-d411c8738ab5">https://towardsdatascience.com/generative-chatbots-using-the-seq2seq-model-d411c8738ab5</a>&nbsp; *****</span></li><li><span style="font-size:18px"><a href="https://pytorch.org/tutorials/beginner/chatbot_tutorial.html?highlight=seq2seq">https://pytorch.org/tutorials/beginner/chatbot_tutorial.html?highlight=seq2seq</a></span></li><li><span style="font-size:18px"><a href="https://github.com/suriyadeepan/practical_seq2seq/blob/master/04-Cornell-Movie-Dialog-Bot.ipynb">https://github.com/suriyadeepan/practical_seq2seq/blob/master/04-Cornell-Movie-Dialog-Bot.ipynb</a></span></li><li><span style="font-size:18px"><a href="https://github.com/suriyadeepan/practical_seq2seq/blob/master/03-Twitter-chatbot.ipynb">https://github.com/suriyadeepan/practical_seq2seq/blob/master/03-Twitter-chatbot.ipynb</a></span></li><li><a href="http://suriyadeepan.github.io/2016-06-28-easy-seq2seq/"><span style="font-size:18px">http://suriyadeepan.github.io/2016-06-28-easy-seq2seq/</span></a></li><li><a href="http://suriyadeepan.github.io/2016-12-31-practical-seq2seq/"><span style="font-size:18px">http://suriyadeepan.github.io/2016-12-31-practical-seq2seq/</span></a></li></ul></article></div><div style="left:-15.308943089430887px;top:-28.238482384823858px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637249683171" class="at-block-content"><p style="text-align:left">ref:&nbsp;</p></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637711013272" class="at-block-content"><ul><li><span style="font-size:18px"><a href="https://fgc.stpi.narl.org.tw/activity/videoDetail/4b1141305df38a7c015e194f22f8015b">https://fgc.stpi.narl.org.tw/activity/videoDetail/4b1141305df38a7c015e194f22f8015b</a></span></li></ul></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in convex-out"><div style="left:78.9159891598916px;top:228.56368563685638px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637250315179" class="at-block-content"><h1>结束捏 | <em>END</em>.</h1></article></div><div style="left:308.31436314363145px;top:598.6341463414634px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637250315180" class="at-block-content"><p><a href="https://github.com/Alafun/BananaChatBot"><span style="font-size:22px">@Banana</span></a><a href="https://github.com/Alafun/BananaChatBot"><span style="font-size:22px">ChatBot</span></a></p></article></div><div style="width:145.43089430894307px;height:145.43089430894307px;left:636.0108401084011px;top:462.6504065040651px;" class="at-block at-block--pure"><article data-block-id="1637556514732" class="at-block-content"><img src=https://i2.hdslb.com/bfs/face/d399d6f5cf7943a996ae96999ba3e6ae2a2988de.jpg@256w_256h_1o.webp /></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:88.7560975609756px;top:32.46612466124661px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637810629260" class="at-block-content"><h1>提问时间</h1></article></div><div style="left:52.983739837398375px;top:332.7371273712737px;width:800px;" class="at-block at-block--pure"><article data-block-id="1637810715610" class="at-block-content"><p style="text-align: left;">朱凡：</p><p style="text-align: left;">卢源斌：</p></article></div></section><section data-notes="" data-background-image="https://img2020.cnblogs.com/blog/2530581/202111/2530581-20211122082505160-29944427.jpg" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="convex-in slide-out"></section><style>.at-block{ position:absolute }</style></div></div></div>
+
+    <!-- dependencies -->
+		<script src="https://yanshuo.io/assets/player/lib/js/head.min.js"></script>
+		<script src="https://yanshuo.io/assets/player/js/reveal.min.js"></script>
+
+    <!-- init -->
+    <script>
+      Reveal.initialize({
+        controls: true,
+        history: true,
+        center: false,
+
+        transition:             'slide',
+        backgroundTransition:   'fade',
+        transitionSpeed:        'default',
+
+        // no marked.js
+				// no markdown.js
+				// no highlight.js
+				dependencies: [
+					{ src: 'https://yanshuo.io/assets/player/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'https://yanshuo.io/assets/player/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'https://yanshuo.io/assets/player/plugin/notes/notes.js', async: true }
+				]
+      });
+    </script>
+  </body>
+</html>
