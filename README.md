@@ -37,6 +37,7 @@ help - Ask bot for help.
 Buffer code(copy):
 
 ```python
+# the xxx below is stand for your name.
 # # import job
 # import os
 # import telebot
@@ -49,10 +50,10 @@ Buffer code(copy):
 
 
 # # Check if message starts with @LYB tag
-# @bot.message_handler(text_startswith="@卢源斌")
+# @bot.message_handler(text_startswith="@xxx")
 # def start_filter(message):
 #     bot.send_message(message.chat.id,
-#                      "Looks like you are calling 卢源斌, wait...")
+#                      "Looks like you are calling xxx, wait...")
 
 
 # # Check if text is hi or hello
@@ -64,7 +65,7 @@ Buffer code(copy):
 #                               message.from_user.last_name))
 
 
-# # words=["加油","别放弃","继续跑","你可是年轻人","要不再跑几公里试试？","Come~On~","卢源斌好帅（超大声）"]
+# # words=["加油","别放弃","继续跑","你可是年轻人","要不再跑几公里试试？","Come~On~","xxx好帅（超大声）"]
 
 # # Do not forget to register filters
 # # bot.add_custom_filter(custom_filters.TextMatchFilter())
@@ -122,16 +123,16 @@ API_KEY = os.getenv('API_KEY')
 bot = telebot.TeleBot(API_KEY)
 
 # Check if message starts with @LYB tag
-@bot.message_handler(text_startswith="@卢源斌")
+@bot.message_handler(text_startswith="@xxx")
 def start_filter(message):
-    bot.send_message(message.chat.id, "Looks like you are calling 卢源斌, wait...")
+    bot.send_message(message.chat.id, "Looks like you are calling xxx, wait...")
 
 # Check if text is hi or hello
 @bot.message_handler(text_contains=['不跑','累','好多','跑不'])
 def keep_running_filter(message):
     bot.send_message(message.chat.id, "加油啊, {name}!".format(name=message.from_user.first_name+' '+message.from_user.last_name))
 
-# words=["加油","别放弃","继续跑","你可是年轻人","要不再跑几公里试试？","Come~On~","卢源斌好帅（超大声）"]
+# words=["加油","别放弃","继续跑","你可是年轻人","要不再跑几公里试试？","Come~On~","xxx好帅（超大声）"]
 
 
 # Do not forget to register filters
@@ -176,15 +177,6 @@ bot.infinity_polling()
 
 5. replit
 
-## Outline
-
-```xml
-- Intro
-  - me
-  - bro
-  - yanshuo
-- 
-```
 
 
 
