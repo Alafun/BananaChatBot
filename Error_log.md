@@ -42,4 +42,8 @@ from tensorflow.contrib.rnn import DropoutWrapper
 
 换代码，保平安 `  <| 5_5 |> 555 `
 
+## 其他仓库
+
+https://github.com/SysuJayce/NLP_learn
+
   
