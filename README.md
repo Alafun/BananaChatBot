@@ -11,140 +11,6 @@
 
 
 
-
-## Slide MindMap
-
-### Background
-
-1. Q&A robot
-2. [CU GAME](https://www.bilibili.com/video/BV1L44y147zC)
-
-### DEMO Code
-
-Telegram or Dingding Chat Bot
-
-#### NLPLover commends list
-
-```shell
-start - Let's start chat.
-hello - Say "Hi! "
-keeprunning - Change to cheer mode. 
-help - Ask bot for help.
-```
-
-#### NLPLover code
-
-Buffer code(copy):
-
-```python
-# the xxx below is stand for your name.
-# # import job
-# import os
-# import telebot
-# from telebot import custom_filters
-# # import random
-
-# #define job
-# API_KEY = os.getenv('API_KEY')
-# bot = telebot.TeleBot(API_KEY)
-
-
-# # Check if message starts with @LYB tag
-# @bot.message_handler(text_startswith="@xxx")
-# def start_filter(message):
-#     bot.send_message(message.chat.id,
-#                      "Looks like you are calling xxx, wait...")
-
-
-# # Check if text is hi or hello
-# @bot.message_handler(text_contains=['不跑', '累', '好多', '跑不'])
-# def keep_running_filter(message):
-#     bot.send_message(
-#         message.chat.id,
-#         "加油啊, {name}!".format(name=message.from_user.first_name + ' ' +
-#                               message.from_user.last_name))
-
-
-# # words=["加油","别放弃","继续跑","你可是年轻人","要不再跑几公里试试？","Come~On~","xxx好帅（超大声）"]
-
-# # Do not forget to register filters
-# # bot.add_custom_filter(custom_filters.TextMatchFilter())
-# bot.add_custom_filter(custom_filters.TextStartsFilter())
-# bot.add_custom_filter(custom_filters.TextContainsFilter())
-
-# bot.infinity_polling()
-
-
-# import job
-import os
-import telebot
-from telebot import custom_filters
-
-#define job
-API_KEY = os.getenv('API_KEY')
-bot = telebot.TeleBot(API_KEY)
-
-# Check if message starts with @admin tag
-@bot.message_handler(text_startswith="@admin")
-def start_filter(message):
-    bot.send_message(message.chat.id, "Looks like you are calling admin, wait...")
-
-# Check if text is hi or hello
-@bot.message_handler(text=['hi','hello'])
-def text_filter(message):
-    bot.send_message(message.chat.id, "Hi, {name}!".format(name=message.from_user.first_name))
-
-@bot.message_handler(text_contains=['不跑', '累', '好多', '跑不'])
-def keep_running_filter(message):
-    bot.send_message(
-        message.chat.id,
-        "加油啊, {name}!".format(name=message.from_user.first_name + ' ' +
-                              message.from_user.last_name))
-
-# Do not forget to register filters
-bot.add_custom_filter(custom_filters.TextMatchFilter())
-bot.add_custom_filter(custom_filters.TextStartsFilter())
-bot.add_custom_filter(custom_filters.TextContainsFilter())
-
-bot.infinity_polling()
-
-```
-
-Result code(mine)
-
-```python
-# import job
-import os
-import telebot
-from telebot import custom_filters
-import random
-#define job
-API_KEY = os.getenv('API_KEY')
-bot = telebot.TeleBot(API_KEY)
-
-# Check if message starts with @LYB tag
-@bot.message_handler(text_startswith="@xxx")
-def start_filter(message):
-    bot.send_message(message.chat.id, "Looks like you are calling xxx, wait...")
-
-# Check if text is hi or hello
-@bot.message_handler(text_contains=['不跑','累','好多','跑不'])
-def keep_running_filter(message):
-    bot.send_message(message.chat.id, "加油啊, {name}!".format(name=message.from_user.first_name+' '+message.from_user.last_name))
-
-# words=["加油","别放弃","继续跑","你可是年轻人","要不再跑几公里试试？","Come~On~","xxx好帅（超大声）"]
-
-
-# Do not forget to register filters
-# bot.add_custom_filter(custom_filters.TextMatchFilter())
-bot.add_custom_filter(custom_filters.TextStartsFilter())
-bot.add_custom_filter(custom_filters.TextContainsFilter())
-
-bot.infinity_polling()
-```
-
-
-
 ## Ref links: 
 
 1. https://github.com/nlpinaction/learning-nlp
@@ -168,13 +34,9 @@ bot.infinity_polling()
 ## Tools: 
 
 1. colab
-
 2. yanshuo
-
 3. github desktop
-
 4. telegram
-
 5. replit
 
 
