@@ -5,8 +5,25 @@
   Deployment:  [ ![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)   ](https://colab.research.google.com/drive/15xKwj3iOQkWaTKy6fUdbnA1w3qvlVX8t?usp=sharing)
 
 
+## File map
+
+```shell
+BananaChatBot
+├─.ipynb_checkpoints
+├─data
+│  ├─.ipynb_checkpoints
+│  ├─twitter
+│  │  └─__pycache__
+│  └─__pycache__
+├─docs
+│  ├─pic
+│  └─pic2
+└─support resource
+```
+
 
 ## Intro for program
+
 
 
 
