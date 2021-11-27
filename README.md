@@ -4,8 +4,28 @@
 
   Deployment:  [ ![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)   ](https://colab.research.google.com/drive/15xKwj3iOQkWaTKy6fUdbnA1w3qvlVX8t?usp=sharing)
 
+## Quick Start
 
-## File map
+### Method 1
+Click ![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg) buttom above.
+
+### Method 2
+#### Step1:
+Clone this repo
+#### Step2:
+Run `jupyter-notebook` and open [deployment_of_chatbot.ipynb](https://github.com/Alafun/BananaChatBot/blob/main/deployment_of_chatbot.ipynb)
+#### Step3:
+Run code
+
+### Method 3
+Based on [#Method 2](#Method 2) Load `model.npz`
+
+```py
+load_weights = tl.files.load_npz(name='model.npz')
+tl.files.assign_weights(load_weights, model_)
+```
+
+## File map (partly)
 
 ```shell
 BananaChatBot
