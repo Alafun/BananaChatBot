@@ -11,7 +11,7 @@
 
 
 
-## Ref links: 
+## Ref: 
 
 1. https://github.com/nlpinaction/learning-nlp
    1. https://github.com/nlpinaction/learning-nlp/tree/master/chapter-10/seq2seq
@@ -26,18 +26,8 @@
 10. https://www.bilibili.com/video/BV1eA411u7Wj
 11. https://github.com/conanhujinming/How_to_give_a_talk/blob/main/how_to_give_a_talk_conanhujinming.pdf
 12. https://github.com/eternnoir/pyTelegramBotAPI
+13. 《Python聊天机器人开发 基于自然语言处理与机器学习》 【印】Sumit Raj
 
-## Ref books:
-
-1. 《Python聊天机器人开发 基于自然语言处理与机器学习》 【印】Sumit Raj
-
-## Tools: 
-
-1. colab
-2. yanshuo
-3. github desktop
-4. telegram
-5. replit
 
 
 
