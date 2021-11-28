@@ -18,7 +18,7 @@ Run `jupyter-notebook` and open [deployment_of_chatbot.ipynb](https://github.com
 Run code
 
 ### Method 3
-Based on [## Method 2](## Method 2) Load `model.npz`
+Based on [Method 2](## Method 2) Load `model.npz`
 
 ```py
 load_weights = tl.files.load_npz(name='model.npz')
