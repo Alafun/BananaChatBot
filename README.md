@@ -44,6 +44,10 @@ BananaChatBot
 
 ## Intro for program
 
+## Star
+
+![image](https://user-images.githubusercontent.com/78416589/143778803-93db33be-e8be-4c63-b475-f95541eacf69.png)
+
 
 
 
