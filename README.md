@@ -2,12 +2,12 @@
  Task for NLP(Natural Language Process) class.  
  If you love the repo or the repo is helpful for you, the star ⭐ is welcomed 🤗.
 
-  Deployment:  [ ![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)   ](https://colab.research.google.com/drive/15xKwj3iOQkWaTKy6fUdbnA1w3qvlVX8t?usp=sharing)
+  Deployment:  [ ![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)   ](https://colab.research.google.com/drive/15xKwj3iOQkWaTKy6fUdbnA1w3qvlVX8t?usp=sharing) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Alafun/BananaChatBot/HEAD)
 
 ## Quick Start
 
 ### Method 1
-Click ![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg) buttom above.
+Click ![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg) buttom or [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Alafun/BananaChatBot/HEAD) buttom above.
 
 ### Method 2
 #### Step1:
